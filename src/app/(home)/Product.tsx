@@ -1,10 +1,10 @@
 import Image from "next/image";
-import img1 from "@/assets/images/feature/product 01.png";
-import img2 from "@/assets/images/feature/product 02.png";
-import img3 from "@/assets/images/feature/product 03.png";
-import img4 from "@/assets/images/feature/product 04.png";
-import img5 from "@/assets/images/feature/product 05.png";
-import img6 from "@/assets/images/feature/product 06.png";
+import img1 from "@/assets/images/home/feature/product 01.png";
+// import img2 from "@/assets/images/feature/product 02.png";
+// import img3 from "@/assets/images/feature/product 03.png";
+// import img4 from "@/assets/images/feature/product 04.png";
+// import img5 from "@/assets/images/feature/product 05.png";
+// import img6 from "@/assets/images/feature/product 06.png";
 import AddToCart from "@/components/AddToCart";
 import { AiOutlineHeart } from "react-icons/ai";
 

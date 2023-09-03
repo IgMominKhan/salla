@@ -1,14 +1,15 @@
-import Image from 'next/image'
-import Features from './(home)/Features'
+import Image from "next/image";
+import Features from "./(home)/Features";
+import Bannar from "./(home)/Bannar";
 
 export default function Home() {
   return (
-   <>
-<main className='main-container'>
-      {/* features section */} 
-     <Features/> 
-     </main>
+    <>
+      <main>
+        {/* features section */}
+        <Features />
+        <Bannar />
+      </main>
     </>
-    
-  )
+  );
 }

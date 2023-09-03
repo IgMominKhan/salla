@@ -1,0 +1,56 @@
+[
+  {
+    "title": "ساعة ذكية جديدة من سلسلة 8",
+    "category": "سوار رياضي اسود - عادي.",
+    "price": 250,
+    "discount": true,
+    "discount_rate": 20
+  },
+  {
+    "title": "سماعة ساوند كور كيو30 فوق الاذن",
+    "category": "سماعة ذات صوت عالي الدقة",
+    "price": 550,
+    "discount": true,
+    "discount_rate": 16
+  },
+  {
+    "title": "",
+    "category": "سوار رياضي اسود - عادي.",
+    "price": 250,
+    "discount": true,
+    "discount_rate": 14
+  },
+  {
+    "title": "سماعة ساوند كور كيو30 فوق الاذن",
+    "category": "سماعة ذات صوت عالي الدقة",
+    "price": 550,
+    "discount": true,
+    "discount_rate": 12
+  },
+  {
+    "title": "سماعات ايربودز 3 سيم اوريجينال",
+    "category": "سماعة ذات صوت عالي الدقة",
+    "price": 250,
+    "discount": false
+  },
+  {
+    "title": "ساعة ذكية جديدة من سلسلة 8",
+    "category": "سوار رياضي اسود - عادي.",
+    "price": 230,
+    "discount": true,
+    "discount_rate": 16
+  },
+  {
+    "title": "موبايل ابل ايفون 14 (128 جيجابايت) ",
+    "category": "شاشة سوبر ريتينا XDR مقاس 6.1 بوصة",
+    "price": 260,
+    "discount": false
+  },
+  {
+    "title": "ابل ايباد برو 12.9 بوصة واي فاي",
+    "category": "شاشة ليكويد ريتينا اكس دي ار رائعة مقاس 11",
+    "price": 280,
+    "discount": true,
+    "discount_rate": 12
+  }
+]

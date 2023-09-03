@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+image {
+@apply max-w-full h-auto
+}
+
+
+section {
+  @apply py-5xl md:py-6xl;
+}
+
+section + section {
+  @apply pt-0 md:pt-6xl
+}
+
+.main-container {
+  @apply w-11/12 md:w-10/12 max-w-7xl mx-auto;
+}
+
+.btn {
+  @apply px-xl py-1.5 font-medium leading-6  text-sm flex justify-between items-center gap-xl border border-clr-primary-000 text-clr-primary-000 rounded
+}

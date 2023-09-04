@@ -22,3 +22,10 @@ section + section {
 .btn {
   @apply px-xl py-1.5 font-medium leading-6  text-sm flex justify-between items-center gap-xl border border-clr-primary-000 text-clr-primary-000 rounded
 }
+
+/* swiper navigation icon */
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply !text-2xl;
+}

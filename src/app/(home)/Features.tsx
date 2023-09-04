@@ -12,7 +12,7 @@ const Features = async () => {
   // const data: [] = await res.json();
 
   const data = await getData("http://localhost:3000/api/products");
-  console.log(data);
+  // console.log(data);
 
   return (
     <>

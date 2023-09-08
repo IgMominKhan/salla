@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-const   config: Config = {
+const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -96,8 +96,12 @@ const   config: Config = {
         "10xl": "5.5rem",
         "11xl": "6rem",
       },
+
+      screens: {
+        xs: "480px",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/container-queries")],
 };
 export default config;

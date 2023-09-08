@@ -29,7 +29,7 @@ const Categories = async () => {
 
         {/* category bannar     */}
 
-        <section className="grid gap-2xl lg:grid-cols-3  text-clr-dark-white">
+        <section className="grid gap-2xl lg:grid-cols-3  text-clr-dark-white pb-0">
           <div className="p-2xl md:py-14 bg-[url('../assets/images/home/category/bannar01.png')] bg-cover rounded">
             <p className="text-clr-dark-gray-100">سماعات ديجتال</p>
             <p className="text-2xl">أفضل صوت نقي</p>

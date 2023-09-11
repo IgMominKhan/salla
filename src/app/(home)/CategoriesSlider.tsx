@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import img from "@/assets/images/home/category/watch.jpeg";
 
-const CategoriesSlider = ({ categories }: { categories: object[] }) => {
+const CategoriesSlider = ({ categories }: { categories: any }) => {
   // console.log(categories);
   return (
     <>
@@ -37,12 +37,12 @@ const CategoriesSlider = ({ categories }: { categories: object[] }) => {
         modules={[Navigation, Pagination]}
         className="mySwiper mt-2xl md:mt-3xl"
       >
-        {categories.map((category, index) => (
+        {categories.map((category: any,index: number) => (
           <SwiperSlide key={index}>
             <div className="text-center">
               <Image
                 src={img}
-                alt={category.name}
+                alt={category.category_name}
                 width={140}
                 height={140}
                 className="rounded-full mb-xl"

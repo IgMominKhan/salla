@@ -11,7 +11,7 @@ const Features = async () => {
   //
   // const data: [] = await res.json();
 
-  const data = await getData("http://localhost:3000/api/products");
+  const data = await getData(`${process.env.SERVER_URL}/api/products`);
   // console.log(data);
 
   return (

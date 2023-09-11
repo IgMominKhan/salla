@@ -4,7 +4,7 @@ import getData from "@/utils/getData";
 import ProductSlider from "@/components/ProductSlider";
 
 const NewArrival = async () => {
-  const products = await getData("http://localhost:3000/api/products");
+  const products = await getData(`${process.env.SERVER_URL}/api/products`);
 
   // console.log(products);
   return (

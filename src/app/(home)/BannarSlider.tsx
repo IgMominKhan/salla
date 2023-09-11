@@ -18,13 +18,11 @@ const BannarSlider = () => {
         navigation={true}
         modules={[Pagination]}
       >
-<<<<<<< HEAD
         {[1, 2, 3].map((slide) => (
-          <SwiperSlide key={slide} className="text-clr-dark-white bg-clr-info-600 py-11xl text-center bg-[url('../assets/images/home/bannar/slide01.png')]">
-=======
-        {[1, 2, 3].map((slide, index) => (
-          <SwiperSlide className="text-clr-dark-white bg-clr-info-600 py-11xl text-center bg-[url('../assets/images/home/bannar/slide01.png')]">
->>>>>>> 10abf939075e091f346ee42081a2d03eb84001d9
+          <SwiperSlide
+            key={slide}
+            className="text-clr-dark-white bg-clr-info-600 py-11xl text-center bg-[url('../assets/images/home/bannar/slide01.png')] bg-cover"
+          >
             <div className="main-container">
               <h1 className="text-5xl font-bold">أفضل التخفيضات 2022</h1>
               <p className="max-w-lg mx-auto mt-xl">

@@ -1,5 +1,5 @@
 "use client";
-import { Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const BannarSlider = () => {
@@ -7,16 +7,14 @@ const BannarSlider = () => {
     <>
       <Swiper
         slidesPerView={1}
-        autoplay={true}
         pagination={{
           clickable: true,
-          dynamicBullets: true,
-          renderBullet: function (className) {
-            return `<span class="${className} w-12"></span>`;
+          bulletActiveClass: "!w-[37px] !rounded-[14px] !bg-white",
+          renderBullet: function (index:number, className:string) {
+            return `<span class="${className} !w-[14px] !h-[14px] rounded-full !bg-transparent !border !border-white transition-[0.3s] !mb-2xl"></span>`;
           },
         }}
-        navigation={true}
-        modules={[Pagination]}
+        modules={[Navigation, Pagination]}
       >
         {[1, 2, 3].map((slide) => (
           <SwiperSlide
@@ -31,7 +29,7 @@ const BannarSlider = () => {
                 بالتخفيضات على المنتجات
               </p>
 
-              <button className="bg-clr-primary-000 py-xl px-5xl mt-3xl rounded">
+              <button className="bg-clr-primary-000 py-xl px-5xl mt-3xl mb-4xl rounded">
                 اكتشف المزيد
               </button>
             </div>

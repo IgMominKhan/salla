@@ -3,7 +3,7 @@ import img1 from "@/assets/images/home/feature/product 01.png";
 import AddToCart from "@/components/AddToCart";
 import { AiOutlineHeart } from "react-icons/ai";
 
-const Product = ({ product }) => {
+const Product = ({ product }: { product: any }) => {
   const { title, category, price, discount } = product;
 
   return (

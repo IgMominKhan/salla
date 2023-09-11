@@ -7,7 +7,7 @@ import Image from "next/image";
 import img from "@/assets/images/home/category/watch.jpeg";
 
 const CategoriesSlider = ({ categories }) => {
-  console.log(categories);
+  // console.log(categories);
   return (
     <>
       <Swiper

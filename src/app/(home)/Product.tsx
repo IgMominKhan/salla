@@ -10,7 +10,7 @@ const Product = ({ product }) => {
     <>
       <div className="rounded border border-clr-dark-gray-100 bg-clr-dark-white">
         <Image src={img1} alt={category} />
-        <div className="p-xl">
+        <div className="p-xl @container">
           <p className="text-clr-primary-000 text-sm">سماعات</p>
           <p className="text-clr-dark-gray-6000 font-bold">{title}</p>
           <p className="text-clr-dark-gray-400 text-sm">{category}</p>

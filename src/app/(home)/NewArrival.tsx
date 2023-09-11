@@ -6,10 +6,10 @@ import ProductSlider from "@/components/ProductSlider";
 const NewArrival = async () => {
   const products = await getData("http://localhost:3000/api/products");
 
-  console.log(products);
+  // console.log(products);
   return (
-    <div className="bg-clr-dark-gray-50">
-      <section className="main-container b-clr-dark-gray-50">
+    <div className="bg-clr-dark-gray-100">
+      <section className="main-container">
         <div className="flex justify-between">
           <div>
             <h3 className="mb-1 text-2xl text-clr-dark-gray-600 font-bold">

@@ -114,7 +114,7 @@ const Features = async () => {
           </div>
 
           <div className="grid grid-cols-[repeat(auto-fit,minmax(12rem,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] gap-xl xl:gap-2xl mt-3xl ">
-            {data.map((item) => <Product product={item} key={item._id} />)}
+            {data.map((item: any) => <Product product={item} key={item._id} />)}
           </div>
         </section>
       </div>

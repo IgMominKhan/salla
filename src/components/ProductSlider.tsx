@@ -27,7 +27,7 @@ const ProductSlider = ({ products }: { products: any }) => {
         modules={[Navigation, Pagination]}
         className="mySwiper mt-2xl md:mt-3xl"
       >
-        {products.map((product, index) => (
+        {products.map((product: any, index: number) => (
           <SwiperSlide key={index}>
             <Product product={product} />
           </SwiperSlide>

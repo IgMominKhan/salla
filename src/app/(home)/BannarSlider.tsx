@@ -11,7 +11,7 @@ const BannarSlider = () => {
         pagination={{
           clickable: true,
           dynamicBullets: true,
-          renderBullet: function (index, className) {
+          renderBullet: function (className) {
             return `<span class="${className} w-12"></span>`;
           },
         }}

@@ -2,11 +2,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
-import 'swiper/css/navigation';
+import "swiper/css/navigation";
 import Image from "next/image";
 import img from "@/assets/images/home/category/watch.jpeg";
 
-const CategoriesSlider = ({ categories }) => {
+const CategoriesSlider = ({ categories }: { categories: object[] }) => {
   // console.log(categories);
   return (
     <>

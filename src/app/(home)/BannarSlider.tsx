@@ -19,17 +19,17 @@ const BannarSlider = () => {
         {[1, 2, 3].map((slide) => (
           <SwiperSlide
             key={slide}
-            className="text-clr-dark-white bg-clr-info-600 py-11xl text-center bg-[url('../assets/images/home/bannar/slide01.png')] bg-cover"
+            className="bg-clr-info-600 bg-[url('../assets/images/home/bannar/slide01.png')] bg-cover py-11xl text-center text-clr-dark-white"
           >
             <div className="main-container">
               <h1 className="text-5xl font-bold">أفضل التخفيضات 2022</h1>
-              <p className="max-w-lg mx-auto mt-xl">
+              <p className="mx-auto mt-xl max-w-lg">
                 متجر سلة يوفر لك كل ماتحتاجه من إلكترونيات أو أثاث منزلي
                 بالإضافة إلى أفضل التحفيضات على المنتجات , تسوق الان واستمتع بكل
                 بالتخفيضات على المنتجات
               </p>
 
-              <button className="bg-clr-primary-000 py-xl px-5xl mt-3xl mb-4xl rounded">
+              <button className="mb-4xl mt-3xl rounded bg-clr-primary-000 px-5xl py-xl">
                 اكتشف المزيد
               </button>
             </div>

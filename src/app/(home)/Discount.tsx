@@ -11,7 +11,7 @@ const Discount = () => {
       <section className="main-container">
         <div className="flex justify-between">
           <div>
-            <h3 className="mb-1 text-2xl text-clr-dark-gray-600 font-bold">
+            <h3 className="mb-1 text-2xl font-bold text-clr-dark-gray-600">
               منتجات مميزة
             </h3>
             <p>تسوق احدث المنتجات المميزة المضافة جديد</p>
@@ -23,18 +23,18 @@ const Discount = () => {
             <Image className="h-8" src={leftIcon} alt="left icon" />
           </button>
         </div>
-        <div className="lg:flex gap-2xl mt-3xl">
-          <div className="flex-1 xs:@container xs:flex xs:items-center mb-2xl">
-            <div className="min-w-[30%]  max-sm:h-64 overflow-hidden @container:flex-1">
+        <div className="mt-3xl gap-2xl lg:flex">
+          <div className="mb-2xl flex-1 xs:flex xs:items-center xs:@container">
+            <div className="@container:flex-1  min-w-[30%] overflow-hidden max-sm:h-64">
               <Image
                 src={discount}
                 alt="discount"
-                className="min-h-full max-sm:-mt-[13%] @container:!mt-0"
+                className="@container:!mt-0 min-h-full max-sm:-mt-[13%]"
               />
             </div>
-            <div className="p-xl @container:flex-1 ">
+            <div className="@container:flex-1 p-xl ">
               <p className="text-sm text-clr-primary-000">ساعات</p>
-              <p className="text-clr-dark-gray-600 font-medium text-lg">
+              <p className="text-lg font-medium text-clr-dark-gray-600">
                 ساعة ذكية جديدة من سلسلة 8
               </p>
               {/* TODO: add rating  red*/}
@@ -47,20 +47,20 @@ const Discount = () => {
               //   <Image src={ratingIcon} alt="rating" />
               // </p> */
               }
-              <div className="flex gap-1.5 items-center">
+              <div className="flex items-center gap-1.5">
                 {discount
                   ? (
                     <>
-                      <strong className="text-clr-danger-primary text-lg">
+                      <strong className="text-lg text-clr-danger-primary">
                         {price} رس
                       </strong>
-                      <s className="text-clr-dark-gray-300 text-sm">
+                      <s className="text-sm text-clr-dark-gray-300">
                         {price} رس
                       </s>
                     </>
                   )
                   : (
-                    <strong className="text-clr-primary-000 text-lg">
+                    <strong className="text-lg text-clr-primary-000">
                       {price} رس
                     </strong>
                   )}
@@ -68,110 +68,110 @@ const Discount = () => {
 
               {/* counter */}
 
-              <div className="flex my-xl gap-lg">
-                <div className="px-2xl  py-lg flex flex-col bg-clr-dark-gray-50 rounded leading-none">
+              <div className="my-xl flex gap-lg">
+                <div className="flex  flex-col rounded bg-clr-dark-gray-50 px-2xl py-lg leading-none">
                   <div className="text-lg">02</div>
-                  <div className="text-sm text-clr-dark-gray-300 -mt-2 pb-1">
+                  <div className="-mt-2 pb-1 text-sm text-clr-dark-gray-300">
                     يوم
                   </div>
                 </div>
-                <div className="px-2xl  py-lg flex flex-col bg-clr-dark-gray-50 rounded leading-none">
+                <div className="flex  flex-col rounded bg-clr-dark-gray-50 px-2xl py-lg leading-none">
                   <div className="text-lg">05</div>
-                  <div className="text-sm text-clr-dark-gray-300 -mt-2 pb-1">
+                  <div className="-mt-2 pb-1 text-sm text-clr-dark-gray-300">
                     ساعة
                   </div>
                 </div>
-                <div className="px-2xl py-lg flex flex-col bg-clr-dark-gray-50 rounded leading-none">
+                <div className="flex flex-col rounded bg-clr-dark-gray-50 px-2xl py-lg leading-none">
                   <div className="text-lg">51</div>
-                  <div className="text-sm text-clr-dark-gray-300 -mt-2 pb-1">
+                  <div className="-mt-2 pb-1 text-sm text-clr-dark-gray-300">
                     دقيقة
                   </div>
                 </div>
-                <div className="px-2xl lg:px-3xl py-lg flex flex-col bg-clr-dark-gray-50 rounded leading-none">
+                <div className="flex flex-col rounded bg-clr-dark-gray-50 px-2xl py-lg leading-none lg:px-3xl">
                   <div className="text-lg">32</div>
-                  <div className="text-sm text-clr-dark-gray-300 -mt-2 pb-1">
+                  <div className="-mt-2 pb-1 text-sm text-clr-dark-gray-300">
                     ثانية
                   </div>
                 </div>
               </div>
 
-              <div className="flex justify-between gap-lg mt-xl">
-                <button className="flex-1 px-xl md:px-12 py-xl text-white flex gap-lg items-center border border-clr-dark-gray-100 rounded-[4px] whitespace-nowrap bg-clr-primary-000 justify-center">
+              <div className="mt-xl flex justify-between gap-lg">
+                <button className="flex flex-1 items-center justify-center gap-lg whitespace-nowrap rounded-[4px] border border-clr-dark-gray-100 bg-clr-primary-000 px-xl py-xl text-white md:px-12">
                   <BsCart2 className="hidden sm:block" />
                   أضف للسلة
                 </button>
 
-                <button className="p-xl md:p-5 text-clr-dark-gray-300  border border-clr-dark-gray-100 rounded-[4px]">
+                <button className="rounded-[4px] border border-clr-dark-gray-100  p-xl text-clr-dark-gray-300 md:p-5">
                   <AiOutlineHeart />
                 </button>
               </div>
             </div>
           </div>
 
-          <div className="flex-1 xs:@container xs:flex xs:items-center">
-            <div className="min-w-[30%] max-sm:h-64 overflow-hidden @container:flex-1">
+          <div className="flex-1 xs:flex xs:items-center xs:@container">
+            <div className="@container:flex-1 min-w-[30%] overflow-hidden max-sm:h-64">
               <Image
                 src={discount}
                 alt="discount"
-                className="min-h-full max-sm:-mt-[13%] @container:!mt-0"
+                className="@container:!mt-0 min-h-full max-sm:-mt-[13%]"
               />
             </div>
-            <div className="p-xl @container:flex-1">
+            <div className="@container:flex-1 p-xl">
               <p className="text-sm text-clr-primary-000">ساعات</p>
-              <p className="text-clr-dark-gray-600 font-medium text-lg">
+              <p className="text-lg font-medium text-clr-dark-gray-600">
                 ساعة ذكية جديدة من سلسلة 8
               </p>
-              <div className="flex gap-1.5 items-center">
+              <div className="flex items-center gap-1.5">
                 {discount
                   ? (
                     <>
-                      <strong className="text-clr-danger-primary text-lg">
+                      <strong className="text-lg text-clr-danger-primary">
                         {price} رس
                       </strong>
-                      <s className="text-clr-dark-gray-300 text-sm">
+                      <s className="text-sm text-clr-dark-gray-300">
                         {price} رس
                       </s>
                     </>
                   )
                   : (
-                    <strong className="text-clr-primary-000 text-lg">
+                    <strong className="text-lg text-clr-primary-000">
                       {price} رس
                     </strong>
                   )}
               </div>
               {/* counter */}
-              <div className="flex my-xl gap-lg">
-                <div className="px-2xl  py-lg flex flex-col bg-clr-dark-gray-50 rounded leading-none">
+              <div className="my-xl flex gap-lg">
+                <div className="flex  flex-col rounded bg-clr-dark-gray-50 px-2xl py-lg leading-none">
                   <div className="text-lg">02</div>
-                  <div className="text-sm text-clr-dark-gray-300 -mt-2 pb-1">
+                  <div className="-mt-2 pb-1 text-sm text-clr-dark-gray-300">
                     يوم
                   </div>
                 </div>
-                <div className="px-2xl  py-lg flex flex-col bg-clr-dark-gray-50 rounded leading-none">
+                <div className="flex  flex-col rounded bg-clr-dark-gray-50 px-2xl py-lg leading-none">
                   <div className="text-lg">05</div>
-                  <div className="text-sm text-clr-dark-gray-300 -mt-2 pb-1">
+                  <div className="-mt-2 pb-1 text-sm text-clr-dark-gray-300">
                     ساعة
                   </div>
                 </div>
-                <div className="px-2xl  py-lg flex flex-col bg-clr-dark-gray-50 rounded leading-none">
+                <div className="flex  flex-col rounded bg-clr-dark-gray-50 px-2xl py-lg leading-none">
                   <div className="text-lg">51</div>
-                  <div className="text-sm text-clr-dark-gray-300 -mt-2 pb-1">
+                  <div className="-mt-2 pb-1 text-sm text-clr-dark-gray-300">
                     دقيقة
                   </div>
                 </div>
-                <div className=" px-2xl py-lg flex flex-col bg-clr-dark-gray-50 rounded leading-none">
+                <div className=" flex flex-col rounded bg-clr-dark-gray-50 px-2xl py-lg leading-none">
                   <div className="text-lg">32</div>
-                  <div className="text-sm text-clr-dark-gray-300 -mt-2 pb-1">
+                  <div className="-mt-2 pb-1 text-sm text-clr-dark-gray-300">
                     ثانية
                   </div>
                 </div>
               </div>
-              <div className="flex justify-between gap-lg mt-xl">
-                <button className="flex-1 px-xl md:px-12 py-xl text-white flex gap-lg items-center border border-clr-dark-gray-100 rounded-[4px] whitespace-nowrap bg-clr-primary-000 justify-center">
+              <div className="mt-xl flex justify-between gap-lg">
+                <button className="flex flex-1 items-center justify-center gap-lg whitespace-nowrap rounded-[4px] border border-clr-dark-gray-100 bg-clr-primary-000 px-xl py-xl text-white md:px-12">
                   <BsCart2 className="hidden sm:block" />
                   أضف للسلة
                 </button>
-                <button className="p-xl md:p-5 text-clr-dark-gray-300  border border-clr-dark-gray-100 rounded-[4px]">
+                <button className="rounded-[4px] border border-clr-dark-gray-100  p-xl text-clr-dark-gray-300 md:p-5">
                   <AiOutlineHeart />
                 </button>
               </div>

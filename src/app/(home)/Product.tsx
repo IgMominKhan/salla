@@ -11,29 +11,29 @@ const Product = ({ product }: { product: any }) => {
       <div className="rounded border border-clr-dark-gray-100 bg-clr-dark-white">
         <Image src={img1} alt={category} />
         <div className="p-xl @container">
-          <p className="text-clr-primary-000 text-sm">سماعات</p>
+          <p className="text-sm text-clr-primary-000">سماعات</p>
           <p className="text-clr-dark-gray-6000 font-bold">{title}</p>
-          <p className="text-clr-dark-gray-400 text-sm">{category}</p>
-          <div className="flex gap-1.5 items-center">
+          <p className="text-sm text-clr-dark-gray-400">{category}</p>
+          <div className="flex items-center gap-1.5">
             {discount
               ? (
                 <>
-                  <strong className="text-clr-danger-primary text-lg">
+                  <strong className="text-lg text-clr-danger-primary">
                     {price} رس
                   </strong>
-                  <s className="text-clr-dark-gray-300 text-sm">{price} رس</s>
+                  <s className="text-sm text-clr-dark-gray-300">{price} رس</s>
                 </>
               )
               : (
-                <strong className="text-clr-primary-000 text-lg">
+                <strong className="text-lg text-clr-primary-000">
                   {price} رس
                 </strong>
               )}
           </div>
 
-          <div className="flex justify-between gap-lg mt-xl">
+          <div className="mt-xl flex justify-between gap-lg">
             <AddToCart product_id={product._id} />
-            <button className="p-xl md:p-5 text-clr-dark-gray-600  border border-clr-dark-gray-100 rounded-[4px]">
+            <button className="rounded-[4px] border border-clr-dark-gray-100  p-xl text-clr-dark-gray-600 md:p-5">
               <AiOutlineHeart />
             </button>
           </div>

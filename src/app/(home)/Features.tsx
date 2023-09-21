@@ -18,11 +18,11 @@ const Features = async () => {
     <>
       <div className="main-container">
         <section className="text-clr-dark-gray-400">
-          <div className="md:flex justify-evenly border-[1px] divide-y-[1px] md:divide-y-0 md:divide-x-reverse md:divide-x-[1px] rounded-sm md:rounded-[4px]">
-            <div className="flex gap-5 px-3xl my-3xl">
+          <div className="justify-evenly divide-y-[1px] rounded-sm border-[1px] md:flex md:divide-x-[1px] md:divide-y-0 md:divide-x-reverse md:rounded-[4px]">
+            <div className="my-3xl flex gap-5 px-3xl">
               <Image src={deliveryIcon} alt="delivery" width={50} height={50} />
               <div>
-                <h3 className="text-xl font-bold text-clr-dark-gray-600 mb-1">
+                <h3 className="mb-1 text-xl font-bold text-clr-dark-gray-600">
                   منتجات مضمونه
                 </h3>
                 <p>
@@ -31,10 +31,10 @@ const Features = async () => {
               </div>
             </div>
 
-            <div className="flex gap-5 px-3xl my-3xl max-md:pt-3xl">
+            <div className="my-3xl flex gap-5 px-3xl max-md:pt-3xl">
               <Image src={returnIcon} alt="return" width={50} height={50} />
               <div>
-                <h3 className="text-xl font-bold text-clr-dark-gray-600 mb-1">
+                <h3 className="mb-1 text-xl font-bold text-clr-dark-gray-600">
                   شحن مجاني
                 </h3>
                 <p>
@@ -43,7 +43,7 @@ const Features = async () => {
               </div>
             </div>
 
-            <div className="flex gap-5 px-3xl my-3xl max-md:pt-3xl ">
+            <div className="my-3xl flex gap-5 px-3xl max-md:pt-3xl ">
               <Image
                 src={creaditCard}
                 alt="creadit card"
@@ -51,7 +51,7 @@ const Features = async () => {
                 height={50}
               />
               <div>
-                <h3 className="text-xl font-bold text-clr-dark-gray-600 mb-1">
+                <h3 className="mb-1 text-xl font-bold text-clr-dark-gray-600">
                   مدفوعات آمنة
                 </h3>
                 <p>
@@ -65,13 +65,13 @@ const Features = async () => {
         {/* features banner */}
 
         <section>
-          <div className="flex flex-col md:flex-row  gap-5">
-            <div className="flex-1 flex justify-end items-center bg-right-top min-h-[170px] md:min-h-[250px] align-center bg-[url('../assets/images/home/feature/bannar1.png')] bg-cover">
+          <div className="flex flex-col gap-5  md:flex-row">
+            <div className="align-center flex min-h-[170px] flex-1 items-center justify-end bg-[url('../assets/images/home/feature/bannar1.png')] bg-cover bg-right-top md:min-h-[250px]">
               <div className="p-6 md:py-14 ">
                 <p>
                   سماعات ديجتال
                 </p>
-                <h2 className="text-xl md:text-4xl font-medium">
+                <h2 className="text-xl font-medium md:text-4xl">
                   أفضل صوت نقي
                 </h2>
                 <p className="font-bold">
@@ -80,12 +80,12 @@ const Features = async () => {
               </div>
             </div>
 
-            <div className="flex-1 flex justify-end items-center bg-right-top md:bg-center min-h-[170px] md:min-h-[250px] bg-[url('../assets/images/home/feature/bannar2.png')] bg-cover">
+            <div className="flex min-h-[170px] flex-1 items-center justify-end bg-[url('../assets/images/home/feature/bannar2.png')] bg-cover bg-right-top md:min-h-[250px] md:bg-center">
               <div className="p-6 md:py-14">
                 <p>
                   سماعات ديجتال
                 </p>
-                <h2 className="text-xl md:text-4xl font-medium">
+                <h2 className="text-xl font-medium md:text-4xl">
                   أفضل صوت نقي
                 </h2>
                 <p className="font-bold">
@@ -100,7 +100,7 @@ const Features = async () => {
         <section>
           <div className="flex justify-between">
             <div>
-              <h3 className="mb-1 text-2xl text-clr-dark-gray-600 font-bold">
+              <h3 className="mb-1 text-2xl font-bold text-clr-dark-gray-600">
                 منتجات مميزة
               </h3>
               <p>تسوق احدث المنتجات المميزة المضافة جديد</p>
@@ -113,7 +113,7 @@ const Features = async () => {
             </button>
           </div>
 
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(12rem,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] gap-xl xl:gap-2xl mt-3xl ">
+          <div className="mt-3xl grid grid-cols-[repeat(auto-fit,minmax(12rem,1fr))] gap-xl sm:grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] xl:gap-2xl ">
             {data.map((item: any) => <Product product={item} key={item._id} />)}
           </div>
         </section>

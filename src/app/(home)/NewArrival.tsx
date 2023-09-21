@@ -12,7 +12,7 @@ const NewArrival = async () => {
       <section className="main-container">
         <div className="flex justify-between">
           <div>
-            <h3 className="mb-1 text-2xl text-clr-dark-gray-600 font-bold">
+            <h3 className="mb-1 text-2xl font-bold text-clr-dark-gray-600">
               منتجات مميزة
             </h3>
             <p className="text-clr-dark-gray-400">

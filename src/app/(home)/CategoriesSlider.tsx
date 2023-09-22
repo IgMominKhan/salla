@@ -45,6 +45,7 @@ const CategoriesSlider = ({ categories }: { categories: any }) => {
                 alt={category.category_name}
                 width={140}
                 height={140}
+                placeholder="blur"
                 className="mb-xl rounded-full"
               />
               <p className="text-xl text-clr-dark-gray-600">

@@ -9,7 +9,7 @@ const Product = ({ product }: { product: any }) => {
   return (
     <>
       <div className="rounded border border-clr-dark-gray-100 bg-clr-dark-white">
-        <Image src={img1} alt={category} />
+        <Image src={img1} alt={category} placeholder="blur" />
         <div className="p-xl @container">
           <p className="text-sm text-clr-primary-000">سماعات</p>
           <p className="text-clr-dark-gray-6000 font-bold">{title}</p>

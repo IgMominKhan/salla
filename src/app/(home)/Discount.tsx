@@ -32,6 +32,7 @@ const Discount = () => {
               <Image
                 src={discount}
                 alt="discount"
+                placeholder="blur"
                 className="@container:!mt-0 min-h-full rounded-md max-sm:-mt-[13%]"
               />
             </div>
@@ -116,6 +117,7 @@ const Discount = () => {
               <Image
                 src={discount}
                 alt="discount"
+                placeholder="blur"
                 className="@container:!mt-0 min-h-full rounded-md max-sm:-mt-[13%]"
               />
             </div>

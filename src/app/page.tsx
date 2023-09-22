@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Features from "./(home)/Features";
 import Bannar from "./(home)/Bannar";
 import Categories from "./(home)/Categories";
@@ -6,6 +5,7 @@ import Discount from "./(home)/Discount";
 import NewArrival from "./(home)/NewArrival";
 import ProductAds from "./(home)/ProductAds";
 import BannarSlider from "./(home)/BannarSlider";
+import SpecialProducts from "./(home)/SpecialProducts";
 
 export default function Home() {
   return (
@@ -32,6 +32,9 @@ export default function Home() {
 
         {/* featured bannar */}
         <BannarSlider />
+
+        {/* Special products */}
+       <SpecialProducts /> 
       </main>
     </>
   );

@@ -7,7 +7,7 @@ const ProductAds = () => {
     <>
       <section className="main-container grid grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] gap-2xl text-center text-clr-dark-gray-600 ">
         <div className="flex flex-col gap-2xl rounded bg-clr-primary-50 px-6xl py-3xl">
-          <Image src={add3} className="max-h-[265px] w-auto" alt="headphone" />
+          <Image src={add3} className="max-h-[265px] w-auto" alt="headphone" placeholder="blur" />
           <div>
             <h3 className="text-lg font-bold">معالجة أسرع وأكثر ثراءً</h3>
             <p className="text-clr-dark-gray-400">
@@ -21,6 +21,7 @@ const ProductAds = () => {
           <Image
             src={add2}
             className="mx-auto max-h-[265px] w-3/4"
+            placeholder="blur"
             alt="headphone"
           />
           <div>
@@ -33,7 +34,7 @@ const ProductAds = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2xl rounded bg-clr-warning-100 px-6xl py-3xl ">
-          <Image src={add1} className="max-h-[265px] w-auto" alt="headphone" />
+          <Image src={add1} className="max-h-[265px] w-auto" alt="headphone" placeholder="blur" />
           <div>
             <h3 className="text-lg font-bold">معالجة أسرع وأكثر ثراءً</h3>
             <p className="text-clr-dark-gray-400">

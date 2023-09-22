@@ -5,10 +5,10 @@ const Bannar = () => {
   return (
     <>
       <div className="bg-[url('../assets/images/home/bannar/bannar-bg.png')]">
-        <section className="max-md:!p-4xl py-24 main-container ">
-          <div className="md:flex gap-4xl lg:gap-5xl">
-            <div className=" flex-1 flex max-md:items-center justify-center flex-col gap-xl text-clr-dark-white max-lg:mb-4xl">
-              <h1 className="text-4xl lg:text-5xl font-medium ">
+        <section className="main-container py-24 max-md:!p-4xl ">
+          <div className="gap-4xl md:flex lg:gap-5xl">
+            <div className=" flex flex-1 flex-col justify-center gap-xl text-clr-dark-white max-lg:mb-4xl max-md:items-center">
+              <h1 className="text-4xl font-medium lg:text-5xl ">
                 أفضل التخفيضات 2022
               </h1>
               <p>
@@ -16,11 +16,11 @@ const Bannar = () => {
                 بالإضافة إلى أفضل التحفيضات على المنتجات , تسوق الان واستمتع بكل
                 بالتخفيضات على المنتجات
               </p>
-                <button className="py-3 mt-2xl w-40 text-center bg-clr-primary-000 text-clr-dark-white border border-clr-primary-000 rounded">اكتشف المزيد</button>
+                <button className="mt-2xl w-40 rounded border border-clr-primary-000 bg-clr-primary-000 py-3 text-center text-clr-dark-white">اكتشف المزيد</button>
             </div>
 
             <div className="flex-1">
-              <Image src={bannar} alt="laptop mobile watch" />
+              <Image src={bannar} alt="laptop mobile watch" placeholder="blur" />
             </div>
           </div>
         </section>

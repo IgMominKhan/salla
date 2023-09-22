@@ -14,24 +14,24 @@ export default function Home() {
         
         {/* features section */}
         <Features />
-        
+
         {/* bannar section */}
         <Bannar />
-        
+
         {/* categories section */}
         <Categories />
 
         {/* discount section */}
         <Discount />
-        
+
         {/* new arrival section */}
         <NewArrival />
 
-       {/* product ads */}
+        {/* product ads */}
         <ProductAds />
 
-      { /* featured bannar */}
-      <BannarSlider />
+        {/* featured bannar */}
+        <BannarSlider />
       </main>
     </>
   );

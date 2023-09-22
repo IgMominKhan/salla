@@ -23,16 +23,19 @@ const Discount = () => {
             <Image className="h-8" src={leftIcon} alt="left icon" />
           </button>
         </div>
+
+        {/* discount products */}
+
         <div className="mt-3xl gap-2xl lg:flex">
-          <div className="mb-2xl flex-1 xs:flex xs:items-center xs:@container">
-            <div className="@container:flex-1  min-w-[30%] overflow-hidden max-sm:h-64">
+          <div className="flex-1 rounded-md border-2 border-clr-primary-000 max-lg:mb-2xl xs:flex xs:@container">
+            <div className="@container:flex-1 min-w-[30%] self-center overflow-hidden max-sm:h-64">
               <Image
                 src={discount}
                 alt="discount"
-                className="@container:!mt-0 min-h-full max-sm:-mt-[13%]"
+                className="@container:!mt-0 min-h-full rounded-md max-sm:-mt-[13%]"
               />
             </div>
-            <div className="@container:flex-1 p-xl ">
+            <div className="@container:flex-1 self-end p-xl">
               <p className="text-sm text-clr-primary-000">ساعات</p>
               <p className="text-lg font-medium text-clr-dark-gray-600">
                 ساعة ذكية جديدة من سلسلة 8
@@ -108,15 +111,15 @@ const Discount = () => {
             </div>
           </div>
 
-          <div className="flex-1 xs:flex xs:items-center xs:@container">
-            <div className="@container:flex-1 min-w-[30%] overflow-hidden max-sm:h-64">
+          <div className="flex-1 rounded-md  border-2 border-clr-primary-000 xs:flex xs:@container">
+            <div className="@container:flex-1 min-w-[30%] self-center overflow-hidden max-sm:h-64">
               <Image
                 src={discount}
                 alt="discount"
-                className="@container:!mt-0 min-h-full max-sm:-mt-[13%]"
+                className="@container:!mt-0 min-h-full rounded-md max-sm:-mt-[13%]"
               />
             </div>
-            <div className="@container:flex-1 p-xl">
+            <div className="@container:flex-1 self-end p-xl">
               <p className="text-sm text-clr-primary-000">ساعات</p>
               <p className="text-lg font-medium text-clr-dark-gray-600">
                 ساعة ذكية جديدة من سلسلة 8

@@ -3,16 +3,15 @@
 @tailwind utilities;
 
 image {
-@apply max-w-full h-auto
+  @apply max-w-full h-auto;
 }
-
 
 section {
   @apply py-5xl md:py-6xl;
 }
 
 section + section {
-  @apply pt-0 md:pt-6xl
+  @apply pt-0 md:pt-6xl;
 }
 
 .main-container {
@@ -20,7 +19,7 @@ section + section {
 }
 
 .btn {
-  @apply px-xl py-1.5 font-medium leading-6  text-sm flex justify-between items-center gap-xl border border-clr-primary-000 text-clr-primary-000 rounded
+  @apply px-xl py-1.5 font-medium leading-6  text-sm flex justify-between items-center gap-xl border border-clr-primary-000 text-clr-primary-000 rounded;
 }
 
 /* swiper navigation icon */
@@ -28,4 +27,39 @@ section + section {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   @apply !text-2xl;
+}
+
+video[poster] {
+  @apply object-cover;
+}
+
+/* play icon */
+
+.play-icon_outer-circle {
+  stroke-width: 1;
+  stroke-dasharray: 410;
+  stroke-dashoffset: 0;
+  stroke-linecap: square;
+  transition: all 0.4s ease-out;
+}
+
+.play-icon:hover .play-icon_outer-circle {
+  stroke-dashoffset: 410;
+  transition:
+    stroke 0.7s 0.4s ease-out,
+    stroke-dashoffset 0.4s ease-out;
+}
+
+.play-icon:hover .play-icon_bg {
+  fill: #bf2428;
+  transition: fill 0.4s 0.3s ease-out;
+}
+
+.play-icon:hover .play {
+  fill: white;
+  transition: fill 0.4s 0.3s ease-out;
+}
+
+.play,.pause {
+  transition: all 1s ease-out;
 }

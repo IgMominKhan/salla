@@ -6,6 +6,7 @@ import NewArrival from "./(home)/NewArrival";
 import ProductAds from "./(home)/ProductAds";
 import BannarSlider from "./(home)/BannarSlider";
 import SpecialProducts from "./(home)/SpecialProducts";
+import FeatureVideo from "./(home)/FeatureVideo";
 
 export default function Home() {
   return (
@@ -35,6 +36,9 @@ export default function Home() {
 
         {/* Special products */}
        <SpecialProducts /> 
+
+        {/* feature video */}
+       <FeatureVideo /> 
       </main>
     </>
   );

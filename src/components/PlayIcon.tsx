@@ -1,9 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Hls from "hls.js";
 
-const PlayIcon = () => {
+const PlayIcon = (): JSX.Element => {
   const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    const playbackId = "A7uaHx2xj7WdtTsdNkPHzOd01p497yHk17OfUEXC98jo";
+    const url = "https://stream.mux.com/" + playbackId + ".m3u8";
+    const video = document.getElementById("feature-video");
+
+    if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      video.src = url;
+    } else if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(url);
+      hls.attachMedia(video);
+    }
+  }, []);
 
   const togglePlay = () => {
     const video = document.getElementById("feature-video");
@@ -50,8 +65,8 @@ const PlayIcon = () => {
         {!isPlaying
           ? (
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M58.3174 46.8213L45.0036 38.4897C42.7735 37.0908 40 38.8567 40 41.6648V58.3347C40 61.1463 42.7735 62.9053 45.0002 61.5132L58.3174 53.1816C60.5609 51.7758 60.5609 48.2271 58.3174 46.8213Z"
               fill="white"
               className="play"

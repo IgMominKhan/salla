@@ -5,7 +5,6 @@ import CategoriesSlider from "@/app/(home)/CategoriesSlider";
 
 const Categories = async () => {
   const categories = await getData(`${process.env.SERVER_URL}/api/categories`);
-  console.log(process.env.SERVER_URL);
 
   return (
     <>

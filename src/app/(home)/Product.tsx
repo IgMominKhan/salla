@@ -4,11 +4,10 @@ import AddToCart from "@/components/AddToCart";
 import { AiOutlineHeart } from "react-icons/ai";
 
 const Product = ({ product }: { product: any }) => {
-  const { title, category, price, discount } = product;
+  const { _id, title, category, price, discount, } = product;
 
   return (
-    <>
-      <div className="rounded border border-clr-dark-gray-100 bg-clr-dark-white">
+      <div key={_id} className="rounded border border-clr-dark-gray-100 bg-clr-dark-white">
         <Image src={img1} alt={category} placeholder="blur" />
         <div className="p-xl @container">
           <p className="text-sm text-clr-primary-000">سماعات</p>
@@ -39,7 +38,6 @@ const Product = ({ product }: { product: any }) => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 

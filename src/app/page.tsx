@@ -7,6 +7,7 @@ import ProductAds from "./(home)/ProductAds";
 import BannarSlider from "./(home)/BannarSlider";
 import SpecialProducts from "./(home)/SpecialProducts";
 import FeatureVideo from "./(home)/FeatureVideo";
+import Testimonials from "./(home)/testimonials";
 
 export default function Home() {
   return (
@@ -39,6 +40,9 @@ export default function Home() {
 
         {/* feature video */}
        <FeatureVideo /> 
+
+        {/* testimonials */}
+        <Testimonials />
       </main>
     </>
   );

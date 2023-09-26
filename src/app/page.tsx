@@ -7,7 +7,7 @@ import ProductAds from "./(home)/ProductAds";
 import BannarSlider from "./(home)/BannarSlider";
 import SpecialProducts from "./(home)/SpecialProducts";
 import FeatureVideo from "./(home)/FeatureVideo";
-import Testimonials from "./(home)/testimonials";
+import Testimonials from "./(home)/Testimonials";
 
 export default function Home() {
   return (

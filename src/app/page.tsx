@@ -8,12 +8,12 @@ import BannarSlider from "./(home)/BannarSlider";
 import SpecialProducts from "./(home)/SpecialProducts";
 import FeatureVideo from "./(home)/FeatureVideo";
 import Testimonials from "./(home)/Testimonials";
+import BlogSection from "./(home)/BlogSection";
 
 export default function Home() {
   return (
     <>
       <main>
-        
         {/* features section */}
         <Features />
 
@@ -36,13 +36,16 @@ export default function Home() {
         <BannarSlider />
 
         {/* Special products */}
-       <SpecialProducts /> 
+        <SpecialProducts />
 
         {/* feature video */}
-       <FeatureVideo /> 
+        <FeatureVideo />
 
         {/* testimonials */}
         <Testimonials />
+
+        {/* blogs */}
+        <BlogSection />
       </main>
     </>
   );

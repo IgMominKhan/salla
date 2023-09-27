@@ -21,16 +21,13 @@ const dinNext = localFont({
       path: "../assets/fonts/dinnext-bold.ttf",
       weight: "700",
     },
-    {
-      path: "../assets/fonts/dinnext-heavy.ttf",
-      weight: "800",
-    }
   ],
 });
 
 export const metadata: Metadata = {
   title: "Salla - Online Shopping",
-  description: "Salla is the all-in-one e-commerce platform for merchants of all sizes. Grow your business faster with our easy-to-use tools and features, including a customizable storefront, powerful marketing tools, and seamless integrations with popular payment and shipping providers. Start your free trial today!",
+  description:
+    "Salla is the all-in-one e-commerce platform for merchants of all sizes. Grow your business faster with our easy-to-use tools and features, including a customizable storefront, powerful marketing tools, and seamless integrations with popular payment and shipping providers. Start your free trial today!",
 };
 
 export default function RootLayout({

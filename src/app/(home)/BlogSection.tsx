@@ -3,14 +3,15 @@ import leftIcon from "@/assets/icons/left.svg";
 import SectionTitles from "@/components/SectionTitles";
 
 const LeftSideContent = (
-  <button className="btn self-end">
+  <button
+    className="btn self-end"
+  >
     <span>
       عرض الكل
     </span>
     <Image className="h-8" src={leftIcon} alt="left icon" />
   </button>
 );
-
 
 const BlogSection = () => {
   return (

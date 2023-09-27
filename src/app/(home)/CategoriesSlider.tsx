@@ -33,7 +33,11 @@ const CategoriesSlider = ({ categories }: { categories: any }) => {
             slidesPerView: 7,
           },
         }}
-        navigation={true}
+        navigation={{
+          nextEl: ".next-category",
+          prevEl: ".prev-category",
+          
+        }}
         modules={[Navigation, Pagination]}
         className="mySwiper mt-2xl md:mt-3xl"
       >

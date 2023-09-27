@@ -2,27 +2,29 @@ import Image from "next/image";
 import leftIcon from "@/assets/icons/left.svg";
 import getData from "@/utils/getData";
 import CategoriesSlider from "@/app/(home)/CategoriesSlider";
+import SectionTitles from "@/components/SectionTitles";
+import SlideNavigation from "@/components/SlideNavigation";
+import ShowAllBtn from "@/components/ShowAllBtn";
 
 const Categories = async () => {
   const categories = await getData(`${process.env.SERVER_URL}/api/categories`);
 
   return (
     <>
-      <section className="main-container">
-        <div className="flex justify-between">
-          <div>
-            <h3 className="mb-1 text-2xl font-bold text-clr-dark-gray-600">
-              منتجات مميزة
-            </h3>
-            <p>تسوق احدث المنتجات المميزة المضافة جديد</p>
-          </div>
-          <button className="btn self-end">
-            <span>
-              عرض الكل
-            </span>
-            <Image className="h-8" src={leftIcon} alt="left icon" />
-          </button>
-        </div>
+      <section className="main-container lg:px-2">
+        <SectionTitles
+          title="منتجات مميزة"
+          subTitle="تسوق احدث المنتجات المميزة المضافة جديد"
+          LeftSideContent={
+            <>
+              <SlideNavigation
+                prevSlide="prev-category"
+                nextSlide="next-category"
+              />
+              <ShowAllBtn path="/categories" className='max-[1199px]:hidden'/>
+            </>
+          }
+        />
 
         {/* swiper cagetory slider      */}
         <CategoriesSlider categories={categories} />

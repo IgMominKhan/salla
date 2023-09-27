@@ -3,16 +3,12 @@ import Image from "next/image";
 import creaditCard from "@/assets/icons/credit card.svg";
 import returnIcon from "@/assets/icons/return.svg";
 import deliveryIcon from "@/assets/icons/fast delivery.svg";
-import leftIcon from "@/assets/icons/left.svg";
 import getData from "@/utils/getData";
+import SectionTitles from "@/components/SectionTitles";
+import ShowAllBtn from "@/components/ShowAllBtn";
 
 const Features = async () => {
-  // const res = await fetch("http://localhost:3000/api/products");
-  //
-  // const data: [] = await res.json();
-
   const data = await getData(`${process.env.SERVER_URL}/api/products`);
-  // console.log(data);
 
   return (
     <>
@@ -98,20 +94,13 @@ const Features = async () => {
 
         {/*feature products*/}
         <section>
-          <div className="flex justify-between">
-            <div>
-              <h3 className="mb-1 text-2xl font-bold text-clr-dark-gray-600">
-                منتجات مميزة
-              </h3>
-              <p>تسوق احدث المنتجات المميزة المضافة جديد</p>
-            </div>
-            <button className="btn self-end">
-              <span>
-                عرض الكل
-              </span>
-              <Image className="h-8" src={leftIcon} alt="left icon" />
-            </button>
-          </div>
+          <SectionTitles
+            title="أحدث المقالات"
+            subTitle="تسوق احدث المنتجات المميزة المضافة جديد"
+            LeftSideContent={
+              <ShowAllBtn path="/products" query={{ feature: true }} />
+            }
+          />
 
           <div className="mt-3xl grid grid-cols-[repeat(auto-fit,minmax(12rem,1fr))] gap-xl sm:grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] xl:gap-2xl ">
             {data.map((item: any) => <Product product={item} key={item._id} />)}

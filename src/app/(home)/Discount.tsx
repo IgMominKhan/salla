@@ -3,26 +3,21 @@ import leftIcon from "@/assets/icons/left.svg";
 import discount from "@/assets/images/home/bannar/discount.jpeg";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsCart2 } from "react-icons/bs";
+import SectionTitles from "@/components/SectionTitles";
+import ShowAllBtn from "@/components/ShowAllBtn";
 const Discount = () => {
   const price = 260;
 
   return (
     <>
       <section className="main-container">
-        <div className="flex justify-between">
-          <div>
-            <h3 className="mb-1 text-2xl font-bold text-clr-dark-gray-600">
-              منتجات مميزة
-            </h3>
-            <p>تسوق احدث المنتجات المميزة المضافة جديد</p>
-          </div>
-          <button className="btn self-end">
-            <span>
-              عرض الكل
-            </span>
-            <Image className="h-8" src={leftIcon} alt="left icon" />
-          </button>
-        </div>
+        <SectionTitles
+          title="عروض تنتهى قريبا"
+          subTitle="تسوق احدث المنتجات المميزة المضافة جديد"
+          LeftSideContent={
+            <ShowAllBtn path="/products" query={{ special: true }} />
+          }
+        />
 
         {/* discount products */}
 

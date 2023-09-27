@@ -3,18 +3,7 @@ import SectionTitles from "@/components/SectionTitles";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Testimonial from "@/components/Testimonial";
-import { LeftSlide, RightSlide } from "@/components/icons/IconsLib";
-
-const SlideNavigation = (
-  <div className="flex gap-3 self-end">
-    <button className="prev-testimonial">
-      <RightSlide className="h-10 w-10 md:h-11 md:w-11" />
-    </button>
-    <button className="next-testimonial">
-      <LeftSlide className="h-10 w-10 md:h-11 md:w-11" />
-    </button>
-  </div>
-);
+import SlideNavigation from "@/components/SlideNavigation";
 
 const Testimonials = () => {
   return (
@@ -22,7 +11,7 @@ const Testimonials = () => {
       <SectionTitles
         title="منتجات خاصة"
         subTitle="تسوق احدث المنتجات المميزة المضافة جديد"
-        LeftSideContent={SlideNavigation}
+        LeftSideContent={<SlideNavigation prevSlide="prev-testimonial" nextSlide="next-testimonial" />}
       />
 
       <Swiper

@@ -23,9 +23,12 @@ const ProductSlider = ({ products }: { products: any }) => {
             slidesPerView: 4,
           },
         }}
-        navigation={true}
+        navigation={{
+          nextEl: ".next-new-arrival",
+          prevEl: ".prev-new-arrival",
+        }}
         modules={[Navigation, Pagination]}
-        className="mySwiper mt-2xl md:mt-3xl"
+        className="mt-2xl md:mt-3xl"
       >
         {products.map((product: any, index: number) => (
           <SwiperSlide key={index}>
